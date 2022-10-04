@@ -52,8 +52,15 @@
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
-			<version>8.0.28</version>
+			<version>8.0.30</version>
 		</dependency>
+
+		<dependency>
+			<groupId>com.microsoft.sqlserver</groupId>
+			<artifactId>mssql-jdbc</artifactId>
+			<version>10.2.0.jre11</version>
+		</dependency>
+
 
 		<!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
 		<dependency>

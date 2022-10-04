@@ -9,7 +9,7 @@
 <head>
     <meta charset="UTF-8">
     <title>fastcampus</title>
-    <link rel="stylesheet" href="<c:url value='/css/menu.css'/>">
+    <link rel="stylesheet" href="<c:url value='/css/style.css'/>">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
     <style>
@@ -65,16 +65,16 @@
     </style>
 </head>
 <body>
-<div id="menu">
-    <ul>
-        <li id="logo">fastcampus</li>
-        <li><a href="<c:url value='/'/>">Home</a></li>
-        <li><a href="<c:url value='/board/list'/>">Board</a></li>
-        <li><a href="<c:url value='${loginOutLink}'/>">${loginOut}</a></li>
-        <li><a href="<c:url value='/register/add'/>">Sign in</a></li>
-        <li><a href=""><i class="fa fa-search"></i></a></li>
-    </ul>
-</div>
+<div class="wrap">
+    <div class="intro_bg2">
+        <div class="header">
+            <ul class="nav">
+                <li><a href="<c:url value='/'/>">Home</a></li>
+                <li><a href="<c:url value='/board/list'/>">문의</a></li>
+                <li><a href="<c:url value='${loginOutLink}'/>">${loginOut}</a></li>
+                <li><a href = "#">02-764-1132</a></li>
+            </ul>
+        </div>
 <script>
     let msg = "${msg}";
     if(msg=="WRT_ERR") alert("게시물 등록에 실패하였습니다. 다시 시도해 주세요.");
